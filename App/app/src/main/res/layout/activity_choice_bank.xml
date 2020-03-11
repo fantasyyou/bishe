@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choicebank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".ChoiceBank">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请选择"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="@drawable/divisionline" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:text="请选择"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:textColor="#000"
+        android:background="@drawable/underline1" />
+</LinearLayout>

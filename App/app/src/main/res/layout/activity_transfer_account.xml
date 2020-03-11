@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".TransferAccount">
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="交易转账"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="@drawable/underline1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="3"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="收款姓名"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:hint="请输入收款人姓名"
+            android:textColor="#84c1ff"
+            android:background="@null"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.375"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="收款卡号"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/cardnumber"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.1875"
+            android:hint="请输入银行卡卡号"
+            android:textColor="#84c1ff"
+            android:background="@null"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/photograph"
+            android:layout_width="fill_parent"
+            android:layout_height="78px"
+            android:layout_weight="0.4375"
+            android:background="@drawable/xiangji"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="3"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="收款银行"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/choicebank"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:text="请选择银行>"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textColor="#84c1ff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="3"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="汇款金额"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:hint="请输入汇款金额"
+            android:textColor="#84c1ff"
+            android:background="@null"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="付款卡号"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/myaccount"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#84c1ff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:text="请选择账户"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textColor="#84c1ff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:gravity="center"
+        android:text="完成"
+        android:onClick="pay"
+        android:textColor="#ffffff"
+        android:background="#ff0000"/>
+
+    <com.example.ceshi.PwdKeyboardView
+        android:id="@+id/key_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#919191"
+        android:keepScreenOn="true"
+        android:keyBackground="@drawable/selector_key_board"
+        android:keyTextColor="@android:color/black"
+        android:keyTextSize="26sp"
+        android:shadowRadius="0"
+        android:visibility="gone" />
+</LinearLayout>

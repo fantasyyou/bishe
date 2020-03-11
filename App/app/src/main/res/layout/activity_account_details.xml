@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".AccountDetails">
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="明细详情"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="@drawable/underline1" />
+
+    <TextView
+        android:id="@+id/cost1"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:gravity="center"
+        android:text="-8.00"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="交易时间"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="交易卡号"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/myaccount"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="业务摘要"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="交易场所"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="交易金额"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="交易币种"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="交易卡余额"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="对方账户"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/counteraccount"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="对方户名"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/accountname"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:text=""
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

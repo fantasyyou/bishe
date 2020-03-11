@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#ffffff"
+tools:context=".AddBankCard">
+
+<TextView
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="添加银行卡"
+    android:textColor="#000"
+    android:textSize="22sp"
+    android:background="@drawable/underline1" />
+
+<TextView
+    android:id="@+id/button3"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:text="银行卡号信息"
+    android:gravity="center_vertical"
+    android:textColor="#000"
+    android:paddingLeft="5dip"
+    android:background="@drawable/divisionline" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="银行卡号"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/cardnumber"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="0.5"
+            android:hint="请输入银行卡卡号"
+            android:textColor="#84c1ff"
+            android:background="@null"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/photograph"
+            android:layout_width="fill_parent"
+            android:layout_height="78px"
+            android:layout_weight="1"
+            android:background="@drawable/xiangji"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="开户银行"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/choicebank"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:text="请选择>"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textColor="#84c1ff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="持卡人姓名"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:text="牟松"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dip"
+            android:textColor="#84c1ff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:onClick="next"
+        android:background="#ff0000"/>
+</LinearLayout>

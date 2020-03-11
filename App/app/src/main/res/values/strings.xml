@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">交易转账助手</string>
+    <string name="button_name">开始拍照</string>
+    <string name="button_name1">拍照</string>
+</resources>

@@ -1,0 +1,18 @@
+Python装64位 3.6.0版本
+
+常规导入：
+matplotlib
+numpy
+tensorflow
+
+关于opencv的导入
+pip install opencv-python -i https://mirrors.aliyun.com/pypi/simple/
+pip install pillow -i https://mirrors.aliyun.com/pypi/simple/
+pip install matplotlib -i https://mirrors.aliyun.com/pypi/simple/
+pip install tensorflow==1.6.0 -i https://mirrors.aliyun.com/pypi/simple/
+pip install protobuf==3.6.0 -i https://mirrors.aliyun.com/pypi/simple/
+
+注：Python带着模型等内容文件有几个G，不方便无法上传到GitHub，所以这里就是只有一个demo.py文件
+，该文件是用于对银行卡卡号的识别。
+
+
